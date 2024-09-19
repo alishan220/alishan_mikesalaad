@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="httpos://fontawesome.com/icons/heart?f=sharp-duotone&s=solid">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cookpal - Recipe Catalogue</title>
+    
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./1.jpg" alt="Cookpa Logo">
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Help</a></li>
+                <li><img src="./2.jpg" alt="User Profile"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Trending now</h1>
+        <h1>Mike's famous salad with cheese</h1>
+        <p>By John Mike</p>
+    </section>
+
+    <section class="search-bar">
+        <input type="text" placeholder="Search for recipes..." id="searchInput">
+        <button></button>
+    </section>
+
+    <section class="filters">
+        <button onclick="filterRecipes('all')" class="allrec">All recipes</button>
+        <button onclick="filterRecipes('veg')" class="vegrec">veg recipes only</button>
+        <button onclick="filterRecipes('non-veg')" class="non-vegrec">Non-Veg recipes</button>
+        
+    </section>
+
+    <div class="filters" style="margin-top: 10px;"><b>Ratings</b>
+        <label>
+            <input type="checkbox" id="rating-above-4" name="rating" onclick="filterRating('above')"> Rating Above 4.5
+        </label>
+        <label>
+            <input type="checkbox" id="rating-below-4" name="rating" onclick="filterRating('below')"> Rating Below 4.0
+        </label>
+    </div>
+
+    <section class="recipes" id="recipeContainer">
+        <!-- Recipe cards will be added dynamically here -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo and Description Section -->
+            <div class="footer-section logo-section">
+                <img src="./1.jpg" alt="Cookpal Logo" class="footer-logo">
+                <p>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</p>
+            </div>
+
+            <!-- Company Links Section -->
+            <div class="footer-section company-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Activity</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources Links Section -->
+            <div class="footer-section resources-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Insights</a></li>
+                </ul>
+            </div>
+
+            <!-- Subscribe Section -->
+            <div class="footer-section subscribe-section">
+                <img src="./1.jpg" alt="Cookpal Logo" class="footer-logo">
+                <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
